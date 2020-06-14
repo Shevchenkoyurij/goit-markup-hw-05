@@ -507,6 +507,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 26px; 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -588,10 +589,14 @@ a {
     color: #2196f3;
 }
 .site-nav .link {
+
 font-family: Roboto;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
+color: var(--primary-text-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .auth-nav .link {
 display: flex;
@@ -643,20 +648,21 @@ margin-left: auto;
 .contacts-link { 
 display: flex; 
 margin-right: 30px;
-
-/* color: #000000; */
 }
+
 .contacts-link:last-child {
     margin-right: 0;
 }
 .contacts-link:hover { 
 color: #2196f3;
 
-
 }
 .contacts-link:focus {
 color:  #ffffff;
 }
+
+
+
 .envelope {
   margin-right: 10px;
   fill: currentColor;
