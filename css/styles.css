@@ -412,12 +412,16 @@ color: #FFFFFF;
 }
 
 h2 {
+margin-top: 20px;
+
+padding-right: 24px;  
 font-size: 18px;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
 line-height: 16px;
+color: #212121;
 }
 h3 { 
 font-family: Roboto;
@@ -425,6 +429,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 14px;
 line-height: 16px;
+cursor: pointer;
 }
 h4 {
 font-family: Roboto; 
@@ -432,6 +437,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
+
 }
 .claints{
   padding-top: 94px;
@@ -510,16 +516,33 @@ line-height: 26px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.flex-element .names{
+  padding-top: 20px;
+  padding-left: 24px;
+}
+.flex-element:hover{
+box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+
+
 
 /* background: #F5F4FA;
 border-radius: 4px;  */
 }
 .names {
-  font-family: Roboto;
+padding-left: 24px;
+margin-bottom: 4px;
+padding-left: 24px;
+padding-right: 24px; 
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 36px;
+color: #212121;
 }
 .services {
   font-family: Roboto;
@@ -538,6 +561,11 @@ line-height: 28px;
 }
 .stop{
 padding-left: 0px;
+cursor: pointer;
+padding-bottom: 30px;
+/* margin-right: 30px; */
+margin-bottom: 30px;
+width: calc((100% - 1px) / 3);
 }
 .flex-container {
   display: flex;
@@ -545,9 +573,10 @@ padding-left: 0px;
   
 }
 .flex-element {
-  width: 370px;
-  padding-left: 30px;
-  list-style: none;
+margin-right: 30px;
+border: 1px solid #EEEEEE;
+border-radius: 5px;
+list-style: none;
 }
 .flex-element:nth-child(3n) {
   margin-right: 30;
@@ -602,6 +631,7 @@ border-radius: 2px;
 }
 
 .site-nav .link {
+color: var(--primary-text-color);
 
 font-family: Roboto;
 font-weight: 500;
@@ -709,8 +739,12 @@ color:  #ffffff;
   color: black;
 }
 .work-title {
-  color: #757575;
-  font-family: Roboto;
+margin-top: 0px;
+/* margin-bottom: 20px; */
+padding-left: 24px;
+padding-right: 24px;
+color: #757575;
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
