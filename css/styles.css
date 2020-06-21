@@ -735,13 +735,6 @@ color: #2196f3;
 color:  #ffffff;
 }
 
-.icon:hover, .icon:focus {
-  border: 1px solid var(--main-accent);
-  --color1: var(--main-accent);
-  color: var(--main-accent);
-}
-
-
 .envelope {
   margin-right: 10px;
   fill: currentColor;
@@ -833,16 +826,20 @@ Roboto
   cursor: pointer;
   fill: var(--svg-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon {
-    fill: var(--svg-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-}
 .icon:hover, .icon:focus {
-   fill: var(--main-accent);
+  border: 1px solid var(--main-accent);
+
+  --color1: var(--main-accent);
+
+  transition: var(--color1) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
 
 .logo3 {
   font-family: Raleway, sans-serif;
